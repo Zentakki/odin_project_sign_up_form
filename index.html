@@ -7,46 +7,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>sing up form</title>
+    <title>sign up form</title>
 </head>
 <body>
     <div id="main-container">
         <div id="left-container">
             <div class="brand">
-                <img src="images/logo_clave_de_sol.png" alt="Image by <a href='https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1297838'>OpenClipart-Vectors</a> from <a href='https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1297838'>Pixabay</a>">
+                <img src="images/logo_clave_de_sol.png" alt="clave de logo_clave_de_sol">
                 <p class="cinzel-decorative-bold brand-text">MELODIN</p>
             </div>
-            <figcaption class="img-caption">
+            <p class="img-caption">
                 Photo by <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/photos/brown-guitar-4Hpljf9Y1ko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-            </figcaption>
+            </p>
         </div>
         <div id="right-container">
             <div class="welcome-message">
                 <p class="cinzel-decorative-regular">
                     A web dedicated to music to play as you walk The Odin Project path.<br><br>
 
-                    Sing up <strong>now</strong> to get started!
+                    Sign up <strong>now</strong> to get started!
                 </p>
             </div>
             <div class="d-form">
                 <p>Let's do this</p>
-                <form action="index.html/singup" method="post">
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="first-name" placeholder="John" minlength="1" maxlength="20">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="last-name" placeholder="Doe" minlength="1" maxlength="20">
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email" placeholder="mail@example.com" maxlength="30">
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" id="phone" name="phone" placeholder="666555444" minlength="9" maxlength="12">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password" minlength="6" maxlength="20">
-                    <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm-password" name="confirm-password" minlength="1" maxlength="20">
+                <form action="index.html/singup" method="post" id="signup-form">
+                    <div class="field">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="John" minlength="1" maxlength="20" required>
+                    </div>
+                    <div class="field">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Doe" minlength="1" maxlength="20" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" placeholder="mail@example.com" maxlength="30" required>
+                    </div>
+                    <div class="field">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone" placeholder="666555444" minlength="9" maxlength="12">
+                    </div>
+                    <div class="field password-field">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" minlength="6" maxlength="20" required>
+                    </div>
+                    <div class="field password-field">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-password" name="confirm-password" minlength="6" maxlength="20" required>
+                    </div>
                 </form>
             </div>
             <div class="d-login">
-                <button type="submit" class="submit-btn">Create Account</button>
+                <button type="submit" class="submit-btn" form="signup-form">Create Account</button>
                 <p>Already have an account? <a href="index.html/login">Log In</a></p>
             </div>
         </div>
