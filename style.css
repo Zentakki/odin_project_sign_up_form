@@ -126,12 +126,6 @@ Font css
     bottom: 30px;
 }
 
-#right-container {
-    background-color: aquamarine;
-    height: 100%;
-    min-width: 70%;
-}
-
 .brand img {
     height: 100%;
     width: auto;
@@ -152,3 +146,68 @@ Font css
     align-self: center;
     font-size: 30px;
 }
+
+#right-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-width: 70%;
+}
+
+.welcome-message {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.897);
+    padding: 20px;
+    font-size: larger;
+}
+
+.d-form {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.637);
+    flex-grow: 2;
+    box-shadow: 0px 1px 5px 5px rgb(0 0 0 / 10%) inset;
+}
+
+.d-form form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.d-login {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.932);
+}
+
+.submit-btn {
+    border-radius: 10px;
+    color: rgba(2, 2, 2, 0.432);
+    text-align: center;
+    font-size: large;
+    padding: 5px 20px;
+    background-color: rgba(11, 143, 11, 0.342);
+}
+
+.d-login a {
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: green;
+}
+
+.d-login a:visited {
+    color: rgb(2, 53, 2);
+}
+
+input:focus {
+    outline: none;
+    border-color: #2b6cb0;
+    box-shadow: 0 0 4px rgba(43,108,176,.45);
+}
+
+input:user-invalid { border-color: #b00020; }
